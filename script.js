@@ -1,5 +1,5 @@
-const projectName = "random-quote-machine";
-localStorage.setItem('example_project', 'Random Quote Machine');
+const projectName = "random-quotes";
+localStorage.setItem('example_project', 'Random Quotes');
 let quotesData;
 
 function inIframe () { try { return window.self !== window.top; } catch (e) { return true; } }
