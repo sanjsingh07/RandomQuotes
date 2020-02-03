@@ -92,9 +92,9 @@ $(document).ready(function() {
     }
   });
 
-  $('#tumblr-quote').on('click', function() {
+  $('#whatsapp-quote').on('click', function() {
     if(!inIframe()) {
-      openURL('https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes&caption='+encodeURIComponent(currentAuthor)+'&content=' + encodeURIComponent(currentQuote)+'&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button');
+      openURL('whatsapp://send?text= '+encodeURIComponent(currentAuthor)+'&content=' + encodeURIComponent(currentQuote)+'&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button');
     }
   });
 });
